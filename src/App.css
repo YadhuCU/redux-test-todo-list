@@ -1,0 +1,40 @@
+.container {
+  min-width: 700px;
+}
+.todo-header {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.todo-header input {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  background: none;
+  border-radius: 5px;
+}
+.button {
+  font-size: 1rem;
+  background: green;
+}
+.todo-body {
+  padding: 1rem;
+  width: 100%;
+  display: grid;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  gap: 1rem;
+  margin-block: 0.5rem;
+}
+.todo-item > p {
+  margin-right: auto;
+}
+.button.delete {
+  background: red;
+}
