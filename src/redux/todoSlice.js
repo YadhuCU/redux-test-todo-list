@@ -20,10 +20,6 @@ const todoSlice = createSlice({
         (item) => item.todoTitle == action.payload.todoTitle,
       );
       currentTodo.todoComplete = !action.payload.todoComplete;
-      const newTodo = state.todos.filter(
-        (item) => item.todoTitle != action.payload.todoTitle,
-      );
-      state.todos = [...newTodo, currentTodo];
     },
   },
 });
